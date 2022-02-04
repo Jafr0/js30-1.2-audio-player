@@ -7,6 +7,7 @@
 	left: 0;
 	filter: blur(10px);
 	z-index: -1;
+	box-shadow: 40px -40px 100px 100px #111010;
 }
 
 .container {
@@ -192,14 +193,60 @@ input[type="range"]::-webkit-slider-thumb {
 
 .length {
 	position: absolute;
-	height: 50px;
+	height: 10px;
 	width: 50px;
 	cursor: pointer;
-	bottom: -1%;
+	bottom: 10%;
 	right: 9%;
 	z-index: 4;
 	font-family: "Montserrat", sans-serif;
 	font-size: 13px;
 	align-items: center;
 	color: rgb(193, 255, 6);
+}
+
+.footer {
+	display: flex;
+	position: absolute;
+	align-items: center;
+	margin-left: 5%;
+	width: 90%;
+	bottom: 3%;
+	justify-content: space-between;
+}
+
+.gh a {
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.gh a:hover {
+	color: rgb(193, 255, 6);
+}
+
+.year {
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	text-decoration: none;
+	font-size: 25px;
+	padding-left: 60px;
+}
+
+.school a {
+	color: white;
+	font-family: "Montserrat", sans-serif;
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.school a:hover {
+	color: rgb(193, 255, 6);
+}
+
+@media (max-width: 1400px) {
+	.container {
+		left: 36%;
+	}
 }
